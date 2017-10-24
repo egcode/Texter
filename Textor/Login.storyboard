@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8HL-WA-1bW">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="URj-fp-kw3">
+            <objects>
+                <viewController id="8HL-WA-1bW" customClass="LoginVC" customModule="Textor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hsv-du-1Lh"/>
+                        <viewControllerLayoutGuide type="bottom" id="2v7-ne-v4I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fI6-BR-B8U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGg-MW-bUe" customClass="TileImageAnimated" customModule="Textor" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="messageBG"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" red="0.37697690519999999" green="0.59145092290000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradiendOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abc-95-4ZQ" customClass="LoginButton" customModule="Textor" customModuleProvider="target">
+                                <rect key="frame" x="16" y="472" width="288" height="60"/>
+                                <color key="backgroundColor" red="0.80066758394241333" green="0.33068951964378357" blue="0.2588476836681366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lPy-HF-4Nc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Login with google"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="google-login"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdQ-xj-hvH" customClass="LoginButton" customModule="Textor" customModuleProvider="target">
+                                <rect key="frame" x="16" y="391" width="288" height="60"/>
+                                <color key="backgroundColor" red="0.25758311150000002" green="0.34628102179999998" blue="0.57924556729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aUt-1g-2TT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Login with facebook"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="facebook-login"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Textor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTN-xB-27e">
+                                <rect key="frame" x="16" y="255.5" width="288" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="nf7-K7-f84"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5El-0t-Oqg">
+                                <rect key="frame" x="65" y="57.5" width="190" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="1HX-0Q-Eao"/>
+                                    <constraint firstAttribute="height" constant="190" id="LIi-nz-ys5"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Nc-On-RJr">
+                                <rect key="frame" x="18" y="538" width="283" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By logging in, you agree to the " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-Y9-NHT">
+                                        <rect key="frame" x="0.0" y="3" width="178" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="178" id="Y0v-Ov-fZs"/>
+                                            <constraint firstAttribute="height" constant="20" id="ZCO-BS-zNG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47o-aB-Wmx">
+                                        <rect key="frame" x="180" y="3" width="97" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="18W-iB-LnH"/>
+                                            <constraint firstAttribute="width" constant="97" id="Xdu-pr-rqr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Terms of Service"/>
+                                        <connections>
+                                            <action selector="onTermsOfService:" destination="8HL-WA-1bW" eventType="touchUpInside" id="0DC-Pp-odi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6aG-k7-8EC"/>
+                                    <constraint firstAttribute="bottom" secondItem="8bA-Y9-NHT" secondAttribute="bottom" constant="-3" id="82S-G6-SjP"/>
+                                    <constraint firstItem="8bA-Y9-NHT" firstAttribute="leading" secondItem="1Nc-On-RJr" secondAttribute="leading" id="Qsg-5e-e2R"/>
+                                    <constraint firstAttribute="width" constant="283" id="xWj-cQ-15z"/>
+                                    <constraint firstItem="47o-aB-Wmx" firstAttribute="leading" secondItem="8bA-Y9-NHT" secondAttribute="trailing" constant="2" id="xkW-k1-wN9"/>
+                                    <constraint firstAttribute="bottom" secondItem="47o-aB-Wmx" secondAttribute="bottom" constant="-3" id="z4s-ga-jox"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DdQ-xj-hvH" firstAttribute="leading" secondItem="fI6-BR-B8U" secondAttribute="leadingMargin" id="8i7-R0-08J"/>
+                            <constraint firstItem="5El-0t-Oqg" firstAttribute="centerX" secondItem="fI6-BR-B8U" secondAttribute="centerX" id="Cl6-Jo-qmq"/>
+                            <constraint firstItem="bGg-MW-bUe" firstAttribute="top" secondItem="fI6-BR-B8U" secondAttribute="top" id="ElC-Nh-Cdk"/>
+                            <constraint firstItem="lTN-xB-27e" firstAttribute="leading" secondItem="fI6-BR-B8U" secondAttribute="leadingMargin" id="FHp-Sr-SmE"/>
+                            <constraint firstItem="2v7-ne-v4I" firstAttribute="top" secondItem="1Nc-On-RJr" secondAttribute="bottom" constant="10" id="GQn-Ow-v0V"/>
+                            <constraint firstItem="lTN-xB-27e" firstAttribute="trailing" secondItem="fI6-BR-B8U" secondAttribute="trailingMargin" id="HYA-uK-PAh"/>
+                            <constraint firstItem="2v7-ne-v4I" firstAttribute="top" secondItem="bGg-MW-bUe" secondAttribute="bottom" id="IOl-HE-7ZK"/>
+                            <constraint firstItem="bGg-MW-bUe" firstAttribute="leading" secondItem="fI6-BR-B8U" secondAttribute="leading" id="Onq-HU-wzB"/>
+                            <constraint firstItem="lTN-xB-27e" firstAttribute="centerY" secondItem="fI6-BR-B8U" secondAttribute="centerY" id="RY6-hf-HdZ"/>
+                            <constraint firstItem="abc-95-4ZQ" firstAttribute="top" secondItem="DdQ-xj-hvH" secondAttribute="bottom" constant="21" id="VZl-b6-721"/>
+                            <constraint firstItem="abc-95-4ZQ" firstAttribute="leading" secondItem="fI6-BR-B8U" secondAttribute="leadingMargin" id="Vpq-gY-t1q"/>
+                            <constraint firstItem="lTN-xB-27e" firstAttribute="top" secondItem="5El-0t-Oqg" secondAttribute="bottom" constant="8" id="ihD-a2-0af"/>
+                            <constraint firstItem="1Nc-On-RJr" firstAttribute="centerX" secondItem="fI6-BR-B8U" secondAttribute="centerX" id="pm9-wr-tev"/>
+                            <constraint firstItem="1Nc-On-RJr" firstAttribute="top" secondItem="abc-95-4ZQ" secondAttribute="bottom" constant="6" id="qC3-be-6Y8"/>
+                            <constraint firstAttribute="trailing" secondItem="bGg-MW-bUe" secondAttribute="trailing" id="waF-mN-i0f"/>
+                            <constraint firstItem="DdQ-xj-hvH" firstAttribute="trailing" secondItem="fI6-BR-B8U" secondAttribute="trailingMargin" id="yPo-aQ-vwf"/>
+                            <constraint firstItem="abc-95-4ZQ" firstAttribute="trailing" secondItem="fI6-BR-B8U" secondAttribute="trailingMargin" id="zHr-Jg-gVC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonFacebookLogin" destination="DdQ-xj-hvH" id="Wo5-Dd-Uuq"/>
+                        <outlet property="buttonGoogleLogin" destination="abc-95-4ZQ" id="sim-dw-a6f"/>
+                        <outlet property="imageViewLogo" destination="5El-0t-Oqg" id="4dz-GT-bwL"/>
+                        <outlet property="labelTitle" destination="lTN-xB-27e" id="6Ce-p1-BrO"/>
+                        <outlet property="tileImageView" destination="bGg-MW-bUe" id="Otx-fz-r9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0g-Wh-gy7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="1455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="1024" height="1024"/>
+        <image name="facebook-login" width="256" height="256"/>
+        <image name="google-login" width="256" height="256"/>
+        <image name="messageBG" width="375" height="667"/>
+    </resources>
+</document>
