@@ -1,9 +1,9 @@
-# Textor
+# Texter
 
-Textor is a instant messaging app that allows you to easily chat in realtime. 
+Texter is a instant messaging app that allows you to easily chat in realtime.
 This repository is the full frontend codebase of the project written in swift.
 
-<a href="https://itunes.apple.com/ca/app/textor/id1080900635?mt=8">
+<a href="https://itunes.apple.com/ca/app/texter/id1080900635?mt=8">
 <img border="0" src="gifs/appstore.png" width="200">
 
 ## **Features**
